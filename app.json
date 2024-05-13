@@ -1,4 +1,9 @@
 {
   "name": "HealthyHarvestFE_Refactor",
-  "displayName": "HealthyHarvestFE_Refactor"
+  "displayName": "HealthyHarvestFE_Refactor",
+  "expo": {
+    "plugins": [
+      "expo-image-picker"
+    ]
+  }
 }

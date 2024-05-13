@@ -182,7 +182,7 @@ const CameraScreen = () => {
           style={{ height: 300, width: 300 }}
           autoPlay
           loop
-          source={require('../../../assets/leaf_loader2.json')}
+          source={require('../assets/leaf_loader2.json')}
         />
         <Text
           textBreakStrategy="balanced"
