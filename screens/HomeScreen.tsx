@@ -1,0 +1,21 @@
+import { View, Text, ScrollView, StatusBar } from 'react-native';
+import React from 'react';
+import app_colors from '../constants/app_colors';
+import Hero from '../component/HomeComponents/Hero';
+import Weather from '../component/HomeComponents/Weather';
+import TakeAPicture from '../component/HomeComponents/TakeAPicture';
+
+const HomeScreen = () => {
+  return (
+    <View style={{ flex: 1, backgroundColor: '#fff' }}>
+      <ScrollView contentContainerStyle={{ paddingBottom: 24, rowGap: 24 }}>
+        <StatusBar backgroundColor={app_colors.primary} />
+        <Hero />
+        <Weather />
+        <TakeAPicture />
+      </ScrollView>
+    </View>
+  );
+};
+
+export default HomeScreen;
