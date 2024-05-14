@@ -3,6 +3,7 @@ import React, { useContext, useState } from 'react';
 import { AntDesign, FontAwesome } from '@expo/vector-icons';
 import { AuthContext } from '../context/AuthContext';
 import app_colors from '../constants/app_colors';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const Name = ({ navigation }) => {
   const { login } = useContext(AuthContext);
@@ -74,7 +75,7 @@ const Name = ({ navigation }) => {
                 borderRadius: 400,
               }}
             >
-              <AntDesign size={24} color={'white'} name="arrowright" />
+              <Icon name="arrow-forward-outline" size={24} color="#fff" />
             </TouchableOpacity>
           </View>
         </View>
