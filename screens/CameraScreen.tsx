@@ -96,7 +96,7 @@ const CameraScreen = () => {
           },
         });
         if (res.status == 200) {
-          navigation.navigate('DiagnosisScreen', { image: photo?.uri, data: res?.data?.Name });
+          navigation.navigate('Diagnosis', { image: photo?.uri, data: res?.data?.Name });
         }
       } catch (error) {
         Alert.alert('Error in fetching data', error?.toString());
@@ -142,13 +142,13 @@ const CameraScreen = () => {
 
       if (res.status === 200) {
         // router.replace({
-        //   pathname: '/(tabs)/Home/DiagnosisScreen',
+        //   pathname: '/(tabs)/Home/Diagnosis',
         //   params: {
         //     image: photo?.path,
         //     data: res?.data?.Name,
         //   },
         // });
-        navigation.navigate('DiagnosisScreen', { image: photo?.path, data: res?.data?.Name });
+        navigation.navigate('Diagnosis', { image: photo?.path, data: res?.data?.Name });
       }
     } catch (error) {
       Alert.alert('Error in fetching data', error?.toString());

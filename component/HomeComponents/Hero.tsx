@@ -2,6 +2,7 @@ import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import React from 'react';
 import app_colors from '../../constants/app_colors';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const Hero = () => {
   const name = 'Name';
@@ -9,8 +10,10 @@ const Hero = () => {
   const day = 'Thu';
   const time = '10:46';
   const location = 'Kolkata , West Bengal';
+  const { top, bottom } = useSafeAreaInsets();
+
   return (
-    <View style={styles.hero_contianer}>
+    <View style={[styles.hero_contianer, { paddingTop: top }]}>
       <ImageBackground
         source={require('../../assets/scene-plants.png')}
         resizeMode="contain"

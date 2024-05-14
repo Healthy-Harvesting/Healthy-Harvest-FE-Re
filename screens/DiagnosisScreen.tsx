@@ -1,10 +1,166 @@
-import { View, Text } from 'react-native';
-import React from 'react';
+import { Alert, Image, ScrollView, Text, View } from 'react-native';
 
-const DiagnosisScreen = () => {
+import React, { useEffect, useState } from 'react';
+import app_colors from '../constants/app_colors';
+import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import axios from 'axios';
+import LottieView from 'lottie-react-native';
+import Accordion from '../component/common/Accordian';
+import ImageGrid from '../component/common/ImageGrid';
+
+const DiagnosisScreen = ({ route }) => {
+  const { data, image } = route.params;
+  const [dia, setDia] = useState({});
+  console.log(data);
+
+  const getData = async () => {
+    try {
+      const res = await axios.get(`http://localhost:9000/disease-info/${data}`);
+      console.log(res);
+      setDia(res?.data);
+    } catch (error) {
+      Alert.alert('Error', 'Something went wrong');
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+  if (data == 'Not A crop !!' || !data) {
+    return (
+      <View
+        style={{
+          flex: 1,
+          backgroundColor: '#fff',
+          justifyContent: 'center',
+          alignItems: 'center',
+          paddingHorizontal: 24,
+        }}
+      >
+        <LottieView
+          style={{ height: 200, width: 300 }}
+          autoPlay
+          loop={false}
+          source={require('../assets/404.json')}
+        />
+        <Text
+          textBreakStrategy="balanced"
+          style={{
+            textAlign: 'center',
+            color: app_colors?.primary,
+            fontSize: 24,
+            marginBottom: 10,
+            fontWeight: 'bold',
+          }}
+        >
+          Probably not a Plant or Crop !!
+        </Text>
+        <Text
+          style={{
+            textAlign: 'center',
+            color: app_colors?.primary,
+            fontSize: 14,
+            fontWeight: '500',
+          }}
+        >
+          Sorry we could not get a proper diagnosis for the image. Please click a clearer picture if
+          possible..
+        </Text>
+      </View>
+    );
+  }
   return (
-    <View>
-      <Text>DiagnosisScreen</Text>
+    <View style={{ flex: 1, backgroundColor: '#fff' }}>
+      <ScrollView>
+        {/* <StatusBar translucent backgroundColor="#17B978" /> */}
+        <View
+          style={{
+            backgroundColor: '#17B978',
+            borderBottomLeftRadius: 20,
+            borderBottomRightRadius: 20,
+          }}
+        >
+          <Image source={{ uri: 'file://' + image }} style={{ height: 200 }} />
+          <View style={{ padding: 25 }}>
+            <Text
+              style={{
+                color: 'white',
+                fontSize: 18,
+                fontWeight: '600',
+              }}
+            >
+              Fruit : {dia?.FruitName}
+            </Text>
+            <Text
+              style={{
+                color: 'white',
+                fontSize: 24,
+                marginBottom: 10,
+                fontWeight: 'bold',
+              }}
+            >
+              {data}({dia?.Type})
+            </Text>
+
+            <Text style={{ color: 'white', fontSize: 16 }}>{dia?.Description}</Text>
+          </View>
+        </View>
+
+        <View style={{ margin: 24, rowGap: 12 }}>
+          {dia?.Cure?.length > 0 && (
+            <Accordion
+              title={'Treatment'}
+              content={<Text style={{ color: '#000', fontSize: 16 }}>{dia?.Cure}</Text>}
+            />
+          )}
+          {dia?.Medications?.length > 0 && (
+            <Accordion
+              title={'Medication'}
+              content={
+                <>
+                  {dia?.Medications?.map((item, index) => {
+                    return (
+                      <Text key={index} style={{ color: '#000', fontSize: 16 }}>
+                        - {item}
+                      </Text>
+                    );
+                  })}
+                </>
+              }
+            />
+          )}
+
+          <Accordion
+            title={'Maintainance'}
+            content={
+              <View style={{ rowGap: 12 }}>
+                {dia?.Maintaining?.map((item, index) => {
+                  return (
+                    <View
+                      style={{
+                        flexDirection: 'row',
+                        columnGap: 12,
+                        alignItems: 'center',
+                      }}
+                      key={index}
+                    >
+                      <MaterialCommunityIcons
+                        name="brightness-1"
+                        size={8}
+                        color={app_colors?.secondary}
+                      />
+                      <Text key={index} style={{ color: '#000', fontSize: 16 }}>
+                        {item}
+                      </Text>
+                    </View>
+                  );
+                })}
+              </View>
+            }
+          />
+          <ImageGrid images={dia?.Pics} />
+        </View>
+      </ScrollView>
     </View>
   );
 };
