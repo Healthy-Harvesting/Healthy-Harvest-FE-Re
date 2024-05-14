@@ -2,13 +2,15 @@ import React from 'react';
 import { StatusBar, StyleSheet } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AppNavigattor from './component/AppNavigattor';
+import { AuthProvider } from './context/AuthContext';
 
 function App(): React.JSX.Element {
   return (
     <SafeAreaProvider>
       <StatusBar translucent backgroundColor={'transparent'} />
-
-      <AppNavigattor />
+      <AuthProvider>
+        <AppNavigattor />
+      </AuthProvider>
     </SafeAreaProvider>
   );
 }
