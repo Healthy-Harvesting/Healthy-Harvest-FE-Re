@@ -10,6 +10,7 @@ import ImageGrid from '../component/common/ImageGrid';
 
 const DiagnosisScreen = ({ route }) => {
   const { data, image } = route.params;
+  console.log(image);
   const [dia, setDia] = useState({});
   console.log(data);
 

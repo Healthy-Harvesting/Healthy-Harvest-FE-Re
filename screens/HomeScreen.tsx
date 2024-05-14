@@ -9,7 +9,6 @@ const HomeScreen = () => {
   return (
     <View style={{ flex: 1, backgroundColor: '#fff' }}>
       <ScrollView contentContainerStyle={{ paddingBottom: 24, rowGap: 24 }}>
-        <StatusBar backgroundColor={app_colors.primary} />
         <Hero />
         <Weather />
         <TakeAPicture />

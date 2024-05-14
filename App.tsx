@@ -1,11 +1,13 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StatusBar, StyleSheet } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AppNavigattor from './component/AppNavigattor';
 
 function App(): React.JSX.Element {
   return (
     <SafeAreaProvider>
+      <StatusBar translucent backgroundColor={'transparent'} />
+
       <AppNavigattor />
     </SafeAreaProvider>
   );

@@ -78,7 +78,7 @@ const CameraScreen = () => {
     if (result) {
       const photo: any = result?.assets?.[0];
       try {
-        setLoading(false);
+        setLoading(true);
         const imageData = new FormData();
 
         const result = await fetch(photo?.uri);
@@ -96,13 +96,16 @@ const CameraScreen = () => {
           },
         });
         if (res.status == 200) {
-          navigation.navigate('Diagnosis', { image: photo?.uri, data: res?.data?.Name });
+          setTimeout(() => {
+            navigation.replace('Diagnosis', { image: photo?.uri, data: res?.data?.Name });
+            setLoading(false);
+          }, 2000);
         }
       } catch (error) {
         Alert.alert('Error in fetching data', error?.toString());
         console.log(error);
       } finally {
-        setLoading(false);
+        // setLoading(false);
       }
     }
   };
@@ -121,7 +124,7 @@ const CameraScreen = () => {
       return;
     }
     try {
-      setLoading(false);
+      setLoading(true);
       const imageData = new FormData();
 
       const newImageUri = 'file://' + photo.path.split('file:/').join('');
@@ -148,13 +151,15 @@ const CameraScreen = () => {
         //     data: res?.data?.Name,
         //   },
         // });
-        navigation.navigate('Diagnosis', { image: photo?.path, data: res?.data?.Name });
+        setTimeout(() => {
+          navigation.replace('Diagnosis', { image: photo?.path, data: res?.data?.Name });
+          setLoading(false);
+        }, 2000);
       }
     } catch (error) {
       Alert.alert('Error in fetching data', error?.toString());
       console.log(error);
     } finally {
-      setLoading(false);
     }
   };
 
@@ -173,11 +178,10 @@ const CameraScreen = () => {
           flex: 1,
           justifyContent: 'center',
           alignItems: 'center',
+          backgroundColor: '#fff',
           paddingHorizontal: 24,
         }}
       >
-        <StatusBar translucent backgroundColor={'transparent'} />
-
         <LottieView
           style={{ height: 300, width: 300 }}
           autoPlay
@@ -202,7 +206,6 @@ const CameraScreen = () => {
 
   return (
     <View style={{ flex: 1 }}>
-      <StatusBar translucent backgroundColor={'transparent'} />
       {/* <Stack.Screen options={{ headerShown: false }} /> */}
       {!photo && (
         <Camera
