@@ -1,11 +1,13 @@
 import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-import React from 'react';
+import React, { useContext } from 'react';
 import app_colors from '../../constants/app_colors';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { AuthContext } from '../../context/AuthContext';
 
 const Hero = () => {
-  const name = 'Name';
+  const { userName } = useContext(AuthContext);
+  const name = userName;
   const temp = '32';
   const day = 'Thu';
   const time = '10:46';
