@@ -9,6 +9,7 @@ import Name from '../screens/Name';
 import { AuthContext } from '../context/AuthContext';
 import { ActivityIndicator } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Database from '../screens/Database';
 
 // Import your screens
 
@@ -40,6 +41,7 @@ function AppNavigation() {
                 <Stack.Screen name="Home" component={HomeScreen} />
                 <Stack.Screen name="Camera" component={CameraScreen} />
                 <Stack.Screen name="Diagnosis" component={DiagnosisScreen} />
+                <Stack.Screen name="Database" component={Database} />
               </Stack.Navigator>
             </NavigationContainer>
           ) : (
