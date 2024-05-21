@@ -1,0 +1,541 @@
+[
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/PublishingImages/AppleScab01sm.jpg",
+      "https://shared.aces.illinois.edu/sites/shared.aces.illinois.edu/files/news/Babadoost_apple026_1.jpg",
+      "https://images.squarespace-cdn.com/content/v1/59cbf998197aeaead99e3780/1557421350086-UX2WRKBTBSB7P2KUXIX8/pests-apple-scab-opt.jpg?format=1500w"
+    ],
+    "Class": "0 Apple-Apple_Scrab",
+    "Name": "Apple Scrab",
+    "FruitName": "Apple",
+    "Description": "Apple scab is a fungal disease that affects the leaves and fruit of apple trees. The disease causes brown or black discoloration and lesions on the leaves, which can lead to defoliation. In severe cases, the fruit may also be affected, resulting in unsightly scabby lesions. The disease is most commonly seen in areas with cool, wet springs.",
+    "Cure": "Treatment for apple scab typically involves the use of fungicides. These fungicides can be applied as a preventive measure before the onset of the disease, or as a curative treatment after the disease has been detected. In addition to fungicides, pruning and destroying infected leaves and fruit can also help to control the spread of the disease. Cultural practices such as good sanitation, proper irrigation and fertilization, and selecting disease-resistant cultivars can also be helpful in managing apple scab.",
+    "Medications": [
+      "Chlorothalonil",
+      "Myclobutanil",
+      "Copper fungicides",
+      "Sulfur fungicides"
+    ],
+    "Maintaining": [
+      "Prune the tree in late winter or early spring before new growth appears. This will encourage healthy new growth and improve fruit production.",
+      "Water the tree regularly, especially during dry spells. Apple trees need about 1 inch of water per week.",
+      "Fertilize the tree in the spring with a balanced fertilizer, such as a 10-10-10 or 12-12-12 fertilizer."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://ipm.missouri.edu/MEG/2020/6/blackRotApple-MW/blackRotLesionsApple.jpg",
+      "https://ipm.missouri.edu/MEG/2019/10/bitterRot/bitterRotApple.jpg",
+      "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    ],
+    "Class": "1 Apple-Back_Rot",
+    "Name": "Apple Back Rot",
+    "FruitName": "Apple",
+    "Description": "Apple Back Rot is a fungal disease that affects the fruit of apple trees. The disease causes sunken, brown rot on the fruit, usually starting at the blossom end. The rot may then spread throughout the fruit, causing it to become soft and mushy. Back rot is most severe in warm, humid weather and is often associated with insect damage, sunscald, or other fruit injuries.",
+    "Cure": "Control of apple back rot begins with good cultural practices. This includes selecting disease-resistant cultivars, proper pruning, and maintaining good sanitation in the orchard. The use of fungicides can also be an effective means of controlling the disease. Applications should be made at regular intervals throughout the growing season, starting at bloom and continuing until harvest. Properly timing fungicide applications is critical to achieving good control of back rot.",
+    "Medications": [
+      "chlorothalonil",
+      "thiophanate-methyl",
+      "mancozeb",
+      "potassium bicarbonate"
+    ],
+    "Maintaining": [
+      "Prune the tree in late winter or early spring before new growth appears. This will encourage healthy new growth and improve fruit production.",
+      "Water the tree regularly, especially during dry spells. Apple trees need about 1 inch of water per week.",
+      "Fertilize the tree in the spring with a balanced fertilizer, such as a 10-10-10 or 12-12-12 fertilizer."
+    ]
+  },
+  {
+    "Type" : "Healthy",
+    "Pics" : [
+      "https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2022/07/what_to_know_apples_green_red_1296x728_header-1024x575.jpg?w=1155&h=1528",
+      "https://nenow.in/wp-content/uploads/2022/11/Types-of-apples-you-must-eat-1.jpg",
+      "https://m.media-amazon.com/images/I/61IX8diqp+L._SL1024_.jpg"
+    ],
+    "Class": "2 Apple-Healthy",
+    "Name": "Healthy Apple",
+    "FruitName": "Apple",
+    "Cure":"",
+    "Description": "The Leaf seems to be Healthy check bellow for general tips for taking care of Apple tree",
+    "Medications":[],
+    "Maintaining": [
+      "Prune the tree in late winter or early spring before new growth appears. This will encourage healthy new growth and improve fruit production.",
+      "Water the tree regularly, especially during dry spells. Apple trees need about 1 inch of water per week.",
+      "Fertilize the tree in the spring with a balanced fertilizer, such as a 10-10-10 or 12-12-12 fertilizer."
+    ]
+  },
+  {
+    "Type" : "Healthy",
+    "Pics" : [
+      "https://healthwire.pk/wp-content/uploads/2022/07/benefits-of-cherry.jpg",
+      "https://nurserynisarga.in/wp-content/uploads/2020/09/istockphoto-165891209-170667a.jpg",
+      "https://treegrowing.tcv.org.uk/wp-content/uploads/2019/09/wild-cherry-leaves-740x555.jpg"
+    ],
+    "Class": "3 Cherry-Healthy",
+    "Name": "Healthy Cherry",
+    "FruitName": "Cherry",
+    "Cure":"",
+    "Description": "The Leaf seems to be Healthy check bellow for general tips for taking care of Cherry tree",
+    "Medications":[],
+    "Maintaining": [
+      "Prune the tree in late winter or early spring before new growth appears. This will encourage healthy new growth and improve fruit production.",
+      "Water the tree regularly, especially during dry spells. Cherry trees need about 1 inch of water per week.",
+      "Harvest the cherries when they are ripe. This usually occurs in mid to late summer, depending on the variety of cherry tree."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://www.swallowtailgardenseeds.com/gardens/tips-and-lists/powdery-mildew-on-calendula.jpg",
+      "https://gardenerspath.com/wp-content/uploads/2020/09/How-to-Treat-Powdery-Mildew-Naturally-FB.jpg",
+      "https://gardenerspath.com/wp-content/uploads/2020/09/Powdery-Mildew-on-a-Leaf-Close-Up.jpg"
+    ],
+    "Class": "4 Cherry-Powdery_mildew",
+    "Name": "Cherry Powdery Mildew",
+    "FruitName": "Cherry",
+    "Description": "Cherry powdery mildew is a fungal disease that affects the leaves, twigs, and fruit of cherry trees. The disease is characterized by a white, powdery growth on the surface of the leaves and fruit. As the disease progresses, leaves may become distorted and may turn yellow or brown. In severe cases, the fruit may be deformed and may not mature properly.",
+    "Cure": "Control of cherry powdery mildew begins with good cultural practices. This includes selecting disease-resistant cultivars, proper pruning, and maintaining good sanitation in the orchard. The use of fungicides can also be an effective means of controlling the disease. Applications should be made at regular intervals throughout the growing season, starting at bloom and continuing until harvest. Properly timing fungicide applications is critical to achieving good control of powdery mildew. In addition, avoiding overhead irrigation and promoting good air circulation within the canopy can also help to reduce powdery mildew development.",
+    "Medications": [
+      "Myclobutanil",
+      "Sulfur",
+      "Potassium bicarbonate",
+      "Tebuconazole"
+    ],
+    "Maintaining": [
+      "Prune the tree in late winter or early spring before new growth appears. This will encourage healthy new growth and improve fruit production.",
+      "Water the tree regularly, especially during dry spells. Cherry trees need about 1 inch of water per week.",
+      "Harvest the cherries when they are ripe. This usually occurs in mid to late summer, depending on the variety of cherry tree."
+    ]
+  },
+  {
+    "Type" : "Healthy",
+    "Pics" : [
+      "https://cdn.britannica.com/36/167236-050-BF90337E/Ears-corn.jpg",
+      "https://www.canr.msu.edu/contentAsset/image/3d342d41-6252-4abf-b7fe-a30ba2395a7f/fileAsset/filter/Resize,Jpeg/resize_w/500/jpeg_q/80",
+      "https://t3.ftcdn.net/jpg/03/20/27/14/360_F_320271479_Ri97pdxM2CoudhSzVGEr5G5Vas1ke9ww.jpg"
+    ],
+    "Class": "5 Corn-Healthy",
+    "Name": "Healthy Corn",
+    "FruitName": "Corn",
+    "Cure":"",
+    "Description": "The Leaf seems to be Healthy check bellow for general tips for taking care of Corn",
+    "Medications":[],
+    "Maintaining": [
+      "Prepare the soil by tilling and adding any necessary amendments, such as fertilizer or lime, to ensure that the soil is at the correct pH level and has adequate nutrients for the corn to grow.",
+      "Plant the corn seeds at the correct time for your area, typically in the spring when the soil has warmed up to at least 50-55 F.",
+      "Corn requires a moderate amount of Nitrogen, Phosphorus and Potassium to grow well, which can be applied through fertilizer or compost."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sporulation_on_leaf.JPG/220px-Sporulation_on_leaf.JPG",
+      "https://live.staticflickr.com/4136/4886729066_b983fd3347_b.jpg",
+      "https://assets.syngenta.ca/images/pest/125/ca2020_northern_corn_leaf_blight_2.jpg"
+    ],
+    "Class": "6 Corn-Northern_Leaf_Blight",
+    "Name": "Corn Northern Leaf Blight",
+    "FruitName": "Corn",
+    "Description": "Corn Northern Leaf Blight is a fungal disease that affects the leaves of corn plants. The disease is characterized by large, dark-colored lesions on the leaves, often with a characteristic “frog-eye” pattern. The lesions can start out as small, water-soaked spots, but will eventually expand and become necrotic. In severe cases, the disease can cause significant defoliation and may reduce the yield of the crop.",
+    "Cure": "Control of corn northern leaf blight begins with planting disease-resistant cultivars. In addition, crop rotation, proper fertilization and irrigation, and destroying infected plant debris can help to reduce the incidence of the disease. Fungicides can also be used as a preventive measure, however, they are not effective once symptoms have developed. Properly timing fungicide applications is critical to achieving good control of northern leaf blight. Applications should be made before the onset of the disease and continue at regular intervals throughout the growing season.",
+    "Medications": [
+      "Azoxystrobin",
+      "Propiconazole",
+      "Tebuconazole",
+      "Trifloxystrobin"
+    ],
+    "Maintaining": [
+      "Prepare the soil by tilling and adding any necessary amendments, such as fertilizer or lime, to ensure that the soil is at the correct pH level and has adequate nutrients for the corn to grow.",
+      "Plant the corn seeds at the correct time for your area, typically in the spring when the soil has warmed up to at least 50-55 F.",
+      "Corn requires a moderate amount of Nitrogen, Phosphorus and Potassium to grow well, which can be applied through fertilizer or compost."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://www.gardeningknowhow.com/wp-content/uploads/2013/09/black-rot-grape.jpg",
+      "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/site-files/black-rot-of-grapes/blackrot.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrEsGmv7-zazU_2DKAjys8c5Ant1NCFzCHTbZU8KTE_CYGuAxsuKobT9aKC4hSrwECng&usqp=CAU"
+    ],
+    "Class": "7 Grape-Black_rot",
+    "Name": "Grape Black Rot",
+    "FruitName": "Grape",
+    "Description": "Grape Black Rot is a fungal disease that affects the fruit and leaves of grapevines. The disease is characterized by dark-colored, sunken cankers on the fruit, twigs, and leaves. As the disease progresses, the fruit will become soft and mushy, and may eventually drop from the vine. Black rot can cause significant yield loss, and can also make grapes unmarketable.",
+    "Cure": "Control of grape black rot begins with good cultural practices. This includes selecting disease-resistant cultivars, proper pruning, and maintaining good sanitation in the vineyard. The use of fungicides can also be an effective means of controlling the disease. Applications should be made at regular intervals throughout the growing season, starting at bloom and continuing until harvest. Properly timing fungicide applications is critical to achieving good control of black rot. In addition, avoiding overhead irrigation and promoting good air circulation within the canopy can also help to reduce black rot development.",
+    "Medications": [
+      "Myclobutanil",
+      "Cyprodinil",
+      "Pyrimethanil",
+      "Fenarimol"
+    ],
+    "Maintaining": [
+      "Prune the vine in late winter or early spring before new growth appears. This will encourage healthy new growth and improve fruit production.",
+      "Fertilize the vine in the spring with a balanced fertilizer, such as a 10-10-10 or 12-12-12 fertilizer.",
+      "Harvest the grapes when they are ripe. This usually occurs in late summer or early fall, depending on the variety of grapevine."
+    ]
+  },
+  {
+    "Type" : "Healthy",
+    "Pics" : [
+      "https://www.thespruceeats.com/thmb/l1_lV7wgpqRArWBwpG3jzHih_e8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-are-grapes-5193263-hero-01-80564d77b6534aa8bfc34f378556e513.jpg",
+      "https://bl-i.thgim.com/public/incoming/iraavk/article65658122.ece/alternates/FREE_1200/IMG_IMG_agri-pg-bl13-puG_2_1_SA9DIM07.jpg",
+      "http://photos.demandstudios.com/getty/article/110/75/81175960.jpg"
+    ],
+    "Class": "8 Grape-Healthy",
+    "Name": "Healthy Grape",
+    "FruitName": "Grape",
+    "Cure":"",
+    "Description": "The Leaf seems to be Healthy check bellow for general tips for taking care of Grape",
+    "Medications":[],
+    "Maintaining": [
+      "Prune the vine in late winter or early spring before new growth appears. This will encourage healthy new growth and improve fruit production.",
+      "Fertilize the vine in the spring with a balanced fertilizer, such as a 10-10-10 or 12-12-12 fertilizer.",
+      "Harvest the grapes when they are ripe. This usually occurs in late summer or early fall, depending on the variety of grapevine."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://ohioline.osu.edu/sites/ohioline/files/imce/Plant_Pathology/PLNTPTH-CER-02_Figure_1.png",
+      "https://cropwatch.unl.edu/image/Corn-southern-rust-F1%20%281%29.jpg",
+      "https://ipcm.wisc.edu/wp-content/uploads/sites/54/2016/07/Corn-Common-Rust-1024x768.jpg"
+    ],
+    "Class": "9 Corn-Common_Rust",
+    "Name": "Corn Common Rust",
+    "FruitName": "Corn",
+    "Description": "Corn Common Rust is a fungal disease that affects the leaves of corn plants. The disease is characterized by small, reddish-brown pustules on the upper and lower surfaces of the leaves. As the disease progresses, the pustules will become more numerous and may eventually cover large areas of the leaf. In severe cases, the disease can cause significant defoliation and may reduce the yield of the crop.",
+    "Cure": "Control of corn common rust begins with planting disease-resistant cultivars. In addition, crop rotation, proper fertilization and irrigation, and destroying infected plant debris can help to reduce the incidence of the disease. Fungicides can also be used as a preventive measure, however, they are not effective once symptoms have developed. Properly timing fungicide applications is critical to achieving good control of common rust. Applications should be made before the onset of the disease and continue at regular intervals throughout the growing season.",
+    "Medications": [
+      "Azoxystrobin",
+      "Propiconazole",
+      "Tebuconazole",
+      "Trifloxystrobin"
+    ],
+    "Maintaining": [
+      "Prepare the soil by tilling and adding any necessary amendments, such as fertilizer or lime, to ensure that the soil is at the correct pH level and has adequate nutrients for the corn to grow.",
+      "Plant the corn seeds at the correct time for your area, typically in the spring when the soil has warmed up to at least 50-55 F.",
+      "Corn requires a moderate amount of Nitrogen, Phosphorus and Potassium to grow well, which can be applied through fertilizer or compost."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://3.bp.blogspot.com/-XGLOgKH5coc/WXuQuFcacuI/AAAAAAAAGsw/mhg1YipY1r4H-SQk3CXFBQ1zznSkeegUwCLcBGAs/w1200-h630-p-k-no-nu/1283_Measles.JPG ",
+      "https://upload.wikimedia.org/wikipedia/commons/c/cb/ESCA_Blattsymptom_1.JPG",
+      "http://progressivecrop.com/wp-content/uploads/2019/09/Photo-2.jpg"
+    ],
+    "Class": "10 Grape-Black_Measles",
+    "Name": "Grape Black Measles",
+    "FruitName": "Grape",
+    "Description": "Grape Black Measles is a fungal disease that affects the fruit and leaves of grapevines. The disease is characterized by small, black, raised spots on the fruit and leaves. As the disease progresses, the spots will become more numerous and may eventually cover large areas of the fruit and leaves. Black Measles can cause significant yield loss, and can also make grapes unmarketable.",
+    "Cure": "Control of grape black measles begins with good cultural practices. This includes selecting disease-resistant cultivars, proper pruning, and maintaining good sanitation in the vineyard. The use of fungicides can also be an effective means of controlling the disease. Applications should be made at regular intervals throughout the growing season, starting at bloom and continuing until harvest. Properly timing fungicide applications is critical to achieving good control of black measles. In addition, avoiding overhead irrigation and promoting good air circulation within the canopy can also help to reduce black measles development.",
+    "Medications": [
+      "Myclobutanil",
+      "Sulfur",
+      "Tebuconazole",
+      "Fenarimol"
+    ],
+    "Maintaining": [
+      "Prune the vine in late winter or early spring before new growth appears. This will encourage healthy new growth and improve fruit production.",
+      "Fertilize the vine in the spring with a balanced fertilizer, such as a 10-10-10 or 12-12-12 fertilizer.",
+      "Harvest the grapes when they are ripe. This usually occurs in late summer or early fall, depending on the variety of grapevine."
+    ]
+  },
+  {
+    "Type" : "Bacterial",
+    "Pics" : [
+      "https://www.gardeningknowhow.com/wp-content/uploads/2013/07/citrus-greening.jpg",
+      "https://acs-h.assetsadobe.com/is/image//content/dam/cen/97/23/WEB/09723-cover-leavescxd.jpg/?$responsive$&wid=700&qlt=90,0&resMode=sharp2",
+      "https://thumbs.dreamstime.com/b/citrus-orange-fruits-infected-citrus-greening-huanglongbing-hlb-citrus-orange-fruit-heavely-infected-huanglongbing-235445438.jpg"
+    ],
+    "Class": "11 Orange-Haunglongbing",
+    "Name": "Orange Haunglongbing",
+    "FruitName": "Orange",
+    "Description": "Haunglongbing (HLB) is a bacterial disease that affects citrus trees, including oranges. The disease is characterized by a gradual decline in tree health, including yellowing of leaves, small and misshapen fruit, and a decline in fruit production. The disease is spread by the Asian citrus psyllid, a tiny insect that feeds on the leaves and shoots of citrus trees. HLB can eventually lead to the death of the tree if left untreated.",
+    "Cure": "Control of Haunglongbing is challenging, but a combination of control measures can help to manage the disease. This includes the use of pesticides to control the Asian citrus psyllid, the use of disease-tolerant or resistant rootstock, proper tree nutrition and irrigation, and regular monitoring of the tree for symptoms of the disease. There is no cure for HLB once a tree is infected, so it is important to take steps to prevent the spread of the disease to healthy trees.",
+    "Medications": [
+      "Imidacloprid",
+      "Oxathiapiprolin",
+      "Fludioxonil",
+      "Famoxadone"
+    ],
+    "Maintaining": [
+      "Prune the tree in late winter or early spring before new growth appears. This will encourage healthy new growth and improve fruit production.",
+      "Fertilize the tree in the spring with a balanced fertilizer, such as a 10-10-10 or 12-12-12 fertilizer.",
+      "Harvest the oranges when they are ripe. This usually occurs in mid to late winter, depending on the variety of orange tree."
+    ]
+  },
+  {
+    "Type" : "Bacterial",
+    "Pics" : [
+      "https://www.canr.msu.edu/uploads/images/4-12%20Bacterial%20spot%20on%20peaches%20and%20nectarinesBILL%203.jpg",
+      "https://peachscout.ca.uky.edu/files/styles/panopoly_image_original/public/3a_bacterial_ls_u_mazzuchi_universita_di_bologna_bgwd_0162027_crpd_1.jpg?itok=LkAp80_5",
+      "https://peachscout.ca.uky.edu/files/styles/panopoly_image_original/public/3b_bacterial_leaf_spot_strang_05hort009js030_0.jpg?itok=yq7f44yi"
+    ],
+    "Class": "12 Peach-Bacterial_Spot",
+    "Name": "Peach Bacterial Spot",
+    "FruitName": "Peach",
+    "Description": "Peach Bacterial Spot is a bacterial disease that affects the leaves, fruit, and twigs of peach trees. The disease is characterized by small, dark-colored, raised spots on the leaves and fruit. As the disease progresses, the spots will become more numerous and may eventually cause defoliation. Bacterial spot can also cause the fruit to become unmarketable.",
+    "Cure": "Control of peach bacterial spot begins with good cultural practices. This includes selecting disease-resistant cultivars, proper pruning, and maintaining good sanitation in the orchard. The use of antibiotics and copper-based fungicides can also be an effective means of controlling the disease. Applications should be made at regular intervals throughout the growing season, starting at bud break and continuing until harvest. Properly timing antibiotic and copper applications is critical to achieving good control of bacterial spot. In addition, avoiding overhead irrigation and promoting good air circulation within the canopy can also help to reduce bacterial spot development.",
+    "Medications": [
+      "Copper hydroxide",
+      "Copper oxychloride",
+      "Copper sulfate"
+    ],
+    "Maintaining": [
+      "Make sure to provide adequate space between rows, to allow proper air circulation and sunlight penetration.",
+      "Training and supporting the tree to grow on a trellis or wire system is important, to ensure the fruit is off the ground and easy to harvest.",
+      "Once the tree is mature enough it is important to thin the peaches so the remaining fruit can grow larger and have better quality."
+    ]
+  },
+  {
+    "Type" : "Healthy",
+    "Pics" : [
+      "https://m.media-amazon.com/images/I/81ndGlhW7AS._SL1400_.jpg",
+      "https://cdn.britannica.com/38/125438-004-9FF41186/Fruit-peach-tree.jpg",
+      "https://cdn.britannica.com/60/171660-050-850EC136/Peaches-tree.jpg"
+    ],
+    "Class": "13 Peach-Healthy",
+    "Name": "Healthy Peach",
+    "FruitName": "Peach",
+    "Cure":"",
+    "Description": "The Leaf seems to be Healthy check bellow for general tips for taking care of Grape",
+    "Medications":[],
+    "Maintaining": [
+      "Make sure to provide adequate space between rows, to allow proper air circulation and sunlight penetration.",
+      "Training and supporting the tree to grow on a trellis or wire system is important, to ensure the fruit is off the ground and easy to harvest.",
+      "Once the tree is mature enough it is important to thin the peaches so the remaining fruit can grow larger and have better quality."
+    ]
+  },
+  {
+    "Type" : "Bacterial",
+    "Pics" : [
+      "https://peppergeek.com/wp-content/uploads/2020/08/Pepper-Plant-Leaf-Spot.jpg",
+      "https://gardenforindoor.com/wp-content/uploads/2021/10/Bacterial-Leaf-Spot-on-Pepper.jpg",
+      "https://u.osu.edu/miller.769/files/2014/07/PepperCanker-1-slua8w.jpg"
+    ],
+    "Class": "14 PepperBell-Bacterial_Spot",
+    "Name": "Pepper Bell Bacterial Spot",
+    "FruitName": "Pepper Bell",
+    "Description": "Pepper Bell Bacterial Spot is a bacterial disease that affects the leaves and fruit of pepper plants. The disease is characterized by small, dark-colored, raised spots on the leaves and fruit. As the disease progresses, the spots will become more numerous and may eventually cause defoliation. Bacterial spot can also cause the fruit to become unmarketable.",
+    "Cure": "Control of Pepper Bell bacterial spot begins with good cultural practices. This includes selecting disease-resistant cultivars, proper pruning, and maintaining good sanitation in the field. The use of antibiotics and copper-based fungicides can also be an effective means of controlling the disease. Applications should be made at regular intervals throughout the growing season, starting at seedling stage and continuing until harvest. Properly timing antibiotic and copper applications is critical to achieving good control of bacterial spot. In addition, avoiding overhead irrigation and promoting good air circulation within the canopy can also help to reduce bacterial spot development.",
+    "Medications": [
+      "Copper hydroxide",
+      "Copper oxychloride",
+      "Copper sulfate",
+      "Streptomycin"
+    ],
+    "Maintaining": [
+      "Be sure to harvest the pepperbells regularly to encourage the plant to produce more fruit.",
+      "Keep in mind that pepperbell plants prefer cooler weather and may not do well in hot and humid climates.",
+      "Fertilize the plant with a balanced fertilizer every two weeks during the growing season."
+    ]
+  },
+  {
+    "Type" : "Healthy",
+    "Pics" : [
+      "https://previews.123rf.com/images/ideation90/ideation901702/ideation90170200343/72747658-sweet-pepper-bell-pepper-on-tree-in-garden.jpg",
+      "https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2022/1/27/1/shutterstock_1718379988.jpg.rend.hgtvcom.616.411.suffix/1643327070208.jpeg",
+      "https://www.almanac.com/sites/default/files/styles/large/public/image_nodes/bell_peppers_dleonis_gettyimages.jpg?itok=Z6m3cDpS"
+    ],
+    "Class": "15 PepperBell-Healthy",
+    "Name": "Healthy PepperBell",
+    "FruitName": "Pepper Bell",
+    "Cure":"",
+    "Description": "The Leaf seems to be Healthy check bellow for general tips for taking care of Grape",
+    "Medications":[],
+    "Maintaining": [
+      "Be sure to harvest the pepperbells regularly to encourage the plant to produce more fruit.",
+      "Keep in mind that pepperbell plants prefer cooler weather and may not do well in hot and humid climates.",
+      "Fertilize the plant with a balanced fertilizer every two weeks during the growing season."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://www.ndsu.edu/agriculture/sites/default/files/2022-07/potato-early-blight-lesions.jpeg",
+      "https://www.ndsu.edu/agriculture/sites/default/files/2022-07/potato-early-blight-lesions.jpeg",
+      "https://www.ndsu.edu/agriculture/sites/default/files/2022-07/potato-early-blight-lesions14.jpeg"
+    ],
+    "Class": "16 Potato-Early_Blight",
+    "Name": "Potato Early Blight",
+    "FruitName": "Potato",
+    "Description": "Potato Early Blight is a fungal disease that affects the leaves and tubers of potato plants. The disease is characterized by small, dark-colored spots on the leaves that can eventually expand and cause defoliation. Lesions may also develop on the tubers, causing them to become unmarketable. Early Blight is most severe during warm, wet weather and is often associated with insect damage or other injuries.",
+    "Cure": "Control of potato early blight begins with good cultural practices. This includes crop rotation, proper fertilization and irrigation, and destroying infected plant debris can help to reduce the incidence of the disease. The use of fungicides can also be an effective means of controlling the disease. Applications should be made at regular intervals throughout the growing season, starting at early stages of growth and continuing until harvest. Properly timing fungicide applications is critical to achieving good control of early blight. In addition, avoiding overhead irrigation and promoting good air circulation within the canopy can also help to reduce early blight development.",
+    "Medications": [
+      "Chlorothalonil",
+      "Mancozeb",
+      "Copper fungicides",
+      "Azoxystrobin"
+    ],
+    "Maintaining": [
+      "Choose a suitable site: potatoes prefer a well-drained soil that is rich in organic matter, with a pH between 4.8 and 6.5.",
+      "Plant seed potatoes: potatoes are grown from seed potatoes, which are small tubers that are specifically grown for planting. These can be purchased from seed potato suppliers.",
+      "Plant at the right time: potatoes should be planted when the soil has warmed up to at least 50°F (10°C) and the risk of frost has passed."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://www.apsnet.org/edcenter/disandpath/oomycete/pdlessons/Article%20Images/LateBlight03.jpg",
+      "https://www.ndsu.edu/agriculture/sites/default/files/2022-05/Figure_7_%28Gudmestad%29.jpg",
+      "https://www.digitrac.in/pub/media/magefan_blog/Late_blight_of_potato.jpg"
+    ],
+    "Class": "17 Potato-Late_Blight",
+    "Name": "Potato Late Blight",
+    "FruitName": "Potato",
+    "Description": "Potato Late Blight is a fungal disease caused by the oomycete Phytophthora infestans, that affects the leaves and tubers of potato plants. The disease is characterized by large, irregular, dark-colored lesions on the leaves and stem, that can cause severe defoliation. Lesions may also develop on the tubers, causing them to become unmarketable and increasing the risk of secondary infections. The disease is favored by warm and humid weather and is often spread by spores carried by wind and rain.",
+    "Cure": "Control of potato late blight begins with planting certified seed potatoes or seed pieces free of the pathogen. In addition, crop rotation, proper fertilization and irrigation, and destroying infected plant debris can help to reduce the incidence of the disease. The use of fungicides, especially those effective against Phytophthora infestans, should be applied at regular intervals throughout the growing season, starting at early stages of growth and continuing until harvest. Properly timing fungicide applications is critical to achieving good control of late blight. In addition, avoiding overhead irrigation and promoting good air circulation within the canopy can also help to reduce late blight development.",
+    "Medications": [
+      "Mefenoxam",
+      "Metalaxyl-M",
+      "Mancozeb"
+    ],
+    "Maintaining": [
+      "Choose a suitable site: potatoes prefer a well-drained soil that is rich in organic matter, with a pH between 4.8 and 6.5.",
+      "Plant seed potatoes: potatoes are grown from seed potatoes, which are small tubers that are specifically grown for planting. These can be purchased from seed potato suppliers.",
+      "Plant at the right time: potatoes should be planted when the soil has warmed up to at least 50°F (10°C) and the risk of frost has passed."
+    ]
+  },
+  {
+    "Type" : "Healthy",
+    "Pics" : [
+      "https://plantix.net/en/library/assets/custom/crop-images/potato.jpeg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRckrla2RovZffyi7rLznIW0qTOIdWhXowugDS17xReXg9z8ytTZP9EBoGATzZHDQbD0X4&usqp=CAU",
+      "https://media.sciencephoto.com/image/e7701830/800wm"
+    ],
+    "Class": "18 Potato-Healthy",
+    "Name": "Healthy Potato",
+    "FruitName": "Potato",
+    "Description": "The Leaf seems to be Healthy check bellow for general tips for taking care of Potato",
+    "Medications":[],
+    "Maintaining": [
+      "Choose a suitable site: potatoes prefer a well-drained soil that is rich in organic matter, with a pH between 4.8 and 6.5.",
+      "Plant seed potatoes: potatoes are grown from seed potatoes, which are small tubers that are specifically grown for planting. These can be purchased from seed potato suppliers.",
+      "Plant at the right time: potatoes should be planted when the soil has warmed up to at least 50°F (10°C) and the risk of frost has passed."
+    ]
+  },
+  {
+    "Type" : "Healthy",
+    "Pics" : [
+      "https://5.imimg.com/data5/DH/GP/MY-25230711/strawberry-plant-500x500.jpg",
+      "https://www.thespruce.com/thmb/ZSwGguD8kcw05EQNLhg7k3dwS4s=/2066x0/filters:no_upscale():max_bytes(150000):strip_icc()/Strawberryplant-GettyImages-123533002-5b198b33eb97de0036be58ae-d5982c5730984563a32598ee2a96fe3e.jpg",
+      "https://www.theenglishgarden.co.uk/wp-content/uploads/2019/07/shutterstock_56673922.jpg"
+    ],
+    "Class": "19 Strawberry-Healthy",
+    "Name": "Healthy Strawberry",
+    "FruitName": "Strawberry",
+    "Cure":"",
+    "Description": "The Leaf seems to be Healthy check bellow for general tips for taking care of StrawBerries",
+    "Medications":[],
+    "Maintaining": [
+      "Choose a suitable site: strawberries prefer well-drained soil that is rich in organic matter, with a pH between 5.5 and 6.5.",
+      "Space plants properly: strawberries should be planted 18-24 inches apart in rows that are 3-4 feet apart.",
+      "Fertilize properly: strawberries should be fertilized with a balanced fertilizer when the plants are about 6 inches tall."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "http://strawberryscout.ca.uky.edu/files/styles/panopoly_image_original/public/8b_strawberry_leaf_scorch_strang_uk_09hort002js309.jpg?itok=ybBQ4x7x",
+      "https://apps.extension.umn.edu/garden/diagnose/plant/images/strawberry/diseases/leafscorch3_600px.jpg",
+      "https://www.gardeningknowhow.com/wp-content/uploads/2018/09/strawberry-scorch.jpg"
+    ],
+    "Class": "20 Strawberry-LeafScorch",
+    "Name": "Strawberry Leaf Scorch",
+    "FruitName": "Strawberry",
+    "Description": "Strawberry Leaf Scorch is a disease caused by the fungus Diplocarpon earliana. This disease affects the leaves of strawberry plants and characterized by small, red-brown, circular spots on the leaves. As the disease progresses, the spots will become more numerous and may eventually cause defoliation. Leaf scorch can also cause a reduction in fruit yield and quality.",
+    "Cure": "Control of strawberry leaf scorch begins with planting disease-resistant cultivars. Maintaining good sanitation and removing and destroying infected leaves and debris can help to reduce the incidence of the disease. The use of fungicides, especially those effective against Diplocarpon earliana, should be applied at regular intervals throughout the growing season, starting at early stages of growth and continuing until harvest. Properly timing fungicide applications and avoiding overhead irrigation can also help to reduce leaf scorch development.",
+    "Medications": [
+      "Chlorothalonil",
+      "Copper-based fungicides",
+      "Mancozeb",
+      "Propiconazole"
+    ],
+    "Maintaining": [
+      "Choose a suitable site: strawberries prefer well-drained soil that is rich in organic matter, with a pH between 5.5 and 6.5.",
+      "Space plants properly: strawberries should be planted 18-24 inches apart in rows that are 3-4 feet apart.",
+      "Fertilize properly: strawberries should be fertilized with a balanced fertilizer when the plants are about 6 inches tall."
+    ]
+  },
+  {
+    "Type" : "Healthy",
+    "Pics" : [
+      "https://i0.wp.com/plantcraft.in/wp-content/uploads/2020/12/003d.jpg?fit=1200%2C1200&ssl=1",
+      "https://gardening.org/wp-content/uploads/2021/03/Healthy-Tomato-Plant.jpg",
+      "https://www.ruralsprout.com/wp-content/uploads/2022/09/no-dig-tomatoes-hero.jpg"
+    ],
+    "Class": "21 Tomato-Healthy",
+    "Name": "Healthy Tomato",
+    "FruitName": "Tomato",
+    "Cure":"",
+    "Description": "The Leaf seems to be Healthy check bellow for general tips for taking care of Grape",
+    "Medications":[],
+    "Maintaining": [
+      "Choose a suitable site: tomatoes prefer well-drained soil that is rich in organic matter, with a pH between 6.0 and 7.0.",
+      "Plant at the right time: tomatoes should be planted after the last frost date and when the soil has warmed up to at least 50°F (10°C).",
+      "Fertilize properly: tomatoes should be fertilized with a balanced fertilizer when the plants are about 6 inches tall."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://plant-pest-advisory.rutgers.edu/wp-content/uploads/2015/07/Leaf-mold3.jpg",
+      "https://www.ctahr.hawaii.edu/uhmg/faq/FAQ-img/large/top-leaf-mold-Fulva-fulvea-WN.jpg",
+      "https://veggiescout.ca.uky.edu/files/styles/panopoly_image_original/public/43_tomato_leaf_mold.jpg?itok=dB9mrcvZ"
+    ],
+    "Class": "22 Tomato-LeafMold",
+    "Name": "Tomato Leaf Mold",
+    "FruitName": "Tomato",
+    "Description": "Tomato Leaf Mold is a fungal disease caused by the fungus Fulvia fulva. This disease affects the leaves of tomato plants and is characterized by small, yellowish-brown spots that appear on the leaves, stems and fruit of the plant. As the disease progresses, the spots will enlarge and become covered with a grayish-white mold, which can cause leaf yellowing and defoliation. Fruit may become unmarketable due to the presence of dark, sunken areas on the fruit surface.",
+    "Cure": "Control of tomato leaf mold begins with planting disease-resistant cultivars. Maintaining good sanitation, proper fertilization and irrigation, and removing and destroying infected leaves and debris can help to reduce the incidence of the disease. The use of fungicides, especially those effective against Fulvia fulva, should be applied at regular intervals throughout the growing season, starting at early stages of growth and continuing until harvest. Properly timing fungicide applications and promoting good air circulation within the canopy can also help to reduce leaf mold development.",
+    "Medications": [
+      "Chlorothalonil",
+      "Copper-based fungicides",
+      "Mancozeb",
+      "Propiconazole"
+    ],
+    "Maintaining": [
+      "Choose a suitable site: tomatoes prefer well-drained soil that is rich in organic matter, with a pH between 6.0 and 7.0.",
+      "Plant at the right time: tomatoes should be planted after the last frost date and when the soil has warmed up to at least 50°F (10°C).",
+      "Fertilize properly: tomatoes should be fertilized with a balanced fertilizer when the plants are about 6 inches tall."
+    ]
+  },
+  {
+    "Type" : "Fungal",
+    "Pics" : [
+      "https://www.gardeningknowhow.com/wp-content/uploads/2021/06/tomato-is-ill-with-phytophthora.jpg",
+      "https://gardenerspath.com/wp-content/uploads/2021/07/Identify-and-Treat-Late-Blight-on-Tomatoes-FB.jpg",
+      "https://www.gardeners.com/globalassets/articles/gardening/content/7262-early.jpg?$staticlink$"
+    ],
+    "Class": "23 Tomato-LateBlight",
+    "Name": "Tomato Late Blight",
+    "FruitName": "Tomato",
+    "Description": "Tomato Late Blight is a fungal disease caused by the oomycete Phytophthora infestans, that affects the leaves, stems and fruit of tomato plants. The disease is characterized by large, irregular, dark-colored lesions on the leaves and stem, that can cause severe defoliation. Lesions may also develop on the fruit, causing them to become unmarketable. The disease is favored by warm and humid weather and is often spread by spores carried by wind and rain.",
+    "Cure": "Control of tomato late blight begins with planting disease-free seedlings or seed, and using certified seedlings. In addition, crop rotation, proper fertilization and irrigation, and removing and destroying infected leaves and debris can help to reduce the incidence of the disease. The use of fungicides, especially those effective against Phytophthora infestans, should be applied at regular intervals throughout the growing season, starting at early stages of growth and continuing until harvest. Properly timing fungicide applications is critical to achieving good control of late blight. In addition, avoiding overhead irrigation and promoting good air circulation within the canopy can also help to reduce late blight development.",
+    "Medications": [
+      "Mefenoxam",
+      "Metalaxyl-M",
+      "Chlorothalonil",
+      "Copper-based fungicides"
+    ],
+    "Maintaining": [
+      "Choose a suitable site: tomatoes prefer well-drained soil that is rich in organic matter, with a pH between 6.0 and 7.0.",
+      "Plant at the right time: tomatoes should be planted after the last frost date and when the soil has warmed up to at least 50°F (10°C).",
+      "Fertilize properly: tomatoes should be fertilized with a balanced fertilizer when the plants are about 6 inches tall."
+    ]
+  },
+  {
+    "Type" : "",
+    "Pics" : [],
+    "Class": "24 Not- A-Crop",
+    "Name": "Not A crop !!",
+    "FruitName": "",
+    "Description": "",
+    "Cure": "",
+    "Medications": [],
+    "Maintaining": []
+  }
+]

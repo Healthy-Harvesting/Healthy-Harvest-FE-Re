@@ -4,6 +4,7 @@ import app_colors from '../constants/app_colors';
 import Hero from '../component/HomeComponents/Hero';
 import Weather from '../component/HomeComponents/Weather';
 import TakeAPicture from '../component/HomeComponents/TakeAPicture';
+import KnowledgeBaseSection from '../component/HomeComponents/KnowledgeBaseSection';
 
 const HomeScreen = () => {
   return (
@@ -12,6 +13,7 @@ const HomeScreen = () => {
         <Hero />
         <Weather />
         <TakeAPicture />
+        <KnowledgeBaseSection />
       </ScrollView>
     </View>
   );

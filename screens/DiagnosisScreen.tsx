@@ -9,7 +9,7 @@ import Accordion from '../component/common/Accordian';
 import ImageGrid from '../component/common/ImageGrid';
 
 const DiagnosisScreen = ({ route }) => {
-  const { data, image } = route.params;
+  const { data, image, uri } = route?.params;
   console.log(image);
   const [dia, setDia] = useState({});
   console.log(data);
@@ -81,7 +81,7 @@ const DiagnosisScreen = ({ route }) => {
             borderBottomRightRadius: 20,
           }}
         >
-          <Image source={{ uri: 'file://' + image }} style={{ height: 200 }} />
+          <Image source={{ uri: uri ? uri : 'file://' + image }} style={{ height: 200 }} />
           <View style={{ padding: 25 }}>
             <Text
               style={{
