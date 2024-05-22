@@ -52,7 +52,7 @@ const Database = () => {
           display: 'flex',
           rowGap: 12,
           justifyContent: 'space-between',
-          paddingBottom: 240,
+          paddingBottom: 140,
         }}
         style={{ width: '100%' }}
         data={Data}
@@ -92,7 +92,9 @@ const Database = () => {
                   paddingHorizontal: 24,
                 }}
               >
-                <Text style={{ fontSize: 14, color: '#fff', fontWeight: '700' }}>{item?.Name}</Text>
+                <Text numberOfLines={1} style={{ fontSize: 14, color: '#fff', fontWeight: '700' }}>
+                  {item?.Name}
+                </Text>
               </View>
             </TouchableOpacity>
           );
