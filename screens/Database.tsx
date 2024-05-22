@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, FlatList } from 'react-native';
+import { View, Text, TouchableOpacity, FlatList, ImageBackground } from 'react-native';
 import React from 'react';
 import Data from '../assets/Data.json';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -52,11 +52,12 @@ const Database = () => {
           display: 'flex',
           rowGap: 12,
           justifyContent: 'space-between',
-          paddingBottom: 240,
+          paddingBottom: 140,
         }}
         style={{ width: '100%' }}
         data={Data}
         renderItem={({ item, index }: any) => {
+          if (item.Name == 'Not A crop !!') return <></>;
           return (
             <TouchableOpacity
               onPress={() =>
@@ -67,9 +68,34 @@ const Database = () => {
                 })
               }
               key={index}
-              style={{ width: '48%', height: 220, borderWidth: 2, borderRadius: 12 }}
+              style={{
+                width: '48%',
+                height: 220,
+                borderRadius: 12,
+                elevation: 1,
+                backgroundColor: '#fff',
+                overflow: 'hidden',
+              }}
             >
-              <Text style={{ color: 'black' }}>{item.Name}</Text>
+              <ImageBackground
+                style={{ flex: 1, overflow: 'hidden' }}
+                source={{ uri: item?.Pics[0] }}
+              />
+              <View
+                style={{
+                  position: 'absolute',
+                  backgroundColor: '#17B978CC',
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  padding: 10,
+                  paddingHorizontal: 24,
+                }}
+              >
+                <Text numberOfLines={1} style={{ fontSize: 14, color: '#fff', fontWeight: '700' }}>
+                  {item?.Name}
+                </Text>
+              </View>
             </TouchableOpacity>
           );
         }}
