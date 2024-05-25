@@ -35,7 +35,7 @@ const Vr = () => {
   return <View style={{ height: '100%', backgroundColor: '#D0D0D0', width: 1 }} />;
 };
 
-const Weather = () => {
+const Weather = ({ weather }: { weather: any }) => {
   return (
     <View style={styles.container}>
       <WeatherInfo icon="sun" size={32} color="orange" label="UV Index" value="LOW" />

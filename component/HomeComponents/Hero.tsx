@@ -4,14 +4,14 @@ import React, { useContext } from 'react';
 import app_colors from '../../constants/app_colors';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthContext } from '../../context/AuthContext';
+import { kelvinToCelsius, kelvinToFahrenheit } from '../../utils/tempConverter';
 
-const Hero = () => {
+const Hero = ({ weather }: { weather: any }) => {
   const { userName } = useContext(AuthContext);
   const name = userName;
   const temp = '32';
   const day = 'Thu';
   const time = '10:46';
-  const location = 'Kolkata , West Bengal';
   const { top, bottom } = useSafeAreaInsets();
 
   return (
@@ -34,13 +34,13 @@ const Hero = () => {
             <Feather name="bell" size={24} color="white" />
           </View>
           <View style={{ flexDirection: 'row', columnGap: 12 }}>
-            <Text style={styles.temp}>{temp}°F</Text>
+            <Text style={styles.temp}> {kelvinToFahrenheit(weather.main.temp.toFixed(0))}°F</Text>
             <Text style={[styles?.temp, styles.text]}>
               {day}, {time}
-              {'\n'}/10° C
+              {'\n'}/ {kelvinToCelsius(weather.main.temp.toFixed(0))}° C
             </Text>
           </View>
-          <Text style={[styles.temp, styles.text]}>{location}</Text>
+          <Text style={[styles.temp, styles.text]}>{weather.name}</Text>
         </View>
       </ImageBackground>
     </View>
