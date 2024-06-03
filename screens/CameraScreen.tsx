@@ -90,7 +90,7 @@ const CameraScreen = () => {
           fileName: data._data.name || 'fallback.jpg',
         });
 
-        const res = await axios.post('http://localhost:9000/predict', imageData, {
+        const res = await axios.post('https://b6ae-34-73-244-5.ngrok-free.app/predict', imageData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
@@ -137,7 +137,7 @@ const CameraScreen = () => {
         fileName: data._data.name || 'fallback.jpg',
       });
 
-      const res = await axios.post('http://localhost:9000/predict', imageData, {
+      const res = await axios.post('https://b6ae-34-73-244-5.ngrok-free.app/predict', imageData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -158,7 +158,7 @@ const CameraScreen = () => {
       }
     } catch (error) {
       Alert.alert('Error in fetching data', error?.toString());
-      console.log(error);
+      console.log(error.response.data);
     } finally {
     }
   };

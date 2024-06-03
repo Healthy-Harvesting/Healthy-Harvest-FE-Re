@@ -46,7 +46,7 @@ const HomeScreen = () => {
           Geolocation.getCurrentPosition(
             (position: any) => {
               console.log(position);
-              setLocation(position);
+              setLocation(position?.coords);
             },
             (error) => {
               console.log(error.code, error.message);
@@ -63,13 +63,14 @@ const HomeScreen = () => {
   useEffect(() => {
     (async () => {
       try {
+        console.log(location);
         const res = await axios.get(
           `https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&appid=98ce44eb72e5be41c287f4f92f048841`
         );
-
+        console.log('Data', res.data);
         setWeather(res.data);
       } catch (err) {
-        console.log(err);
+        console.log(err.response.data);
       }
     })();
   }, [location]);

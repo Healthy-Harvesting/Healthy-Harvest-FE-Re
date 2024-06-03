@@ -34,13 +34,15 @@ const Hero = ({ weather }: { weather: any }) => {
             <Feather name="bell" size={24} color="white" />
           </View>
           <View style={{ flexDirection: 'row', columnGap: 12 }}>
-            <Text style={styles.temp}> {kelvinToFahrenheit(weather.main.temp.toFixed(0))}°F</Text>
+            <Text style={styles.temp}>
+              {parseInt(kelvinToFahrenheit(weather?.main?.temp?.toFixed(1)))}°F
+            </Text>
             <Text style={[styles?.temp, styles.text]}>
               {day}, {time}
-              {'\n'}/ {kelvinToCelsius(weather.main.temp.toFixed(0))}° C
+              {'\n'}/ {parseInt(kelvinToCelsius(weather?.main?.temp?.toFixed(1)))}° C
             </Text>
           </View>
-          <Text style={[styles.temp, styles.text]}>{weather.name}</Text>
+          <Text style={[styles.temp, styles.text]}>{weather?.name}</Text>
         </View>
       </ImageBackground>
     </View>

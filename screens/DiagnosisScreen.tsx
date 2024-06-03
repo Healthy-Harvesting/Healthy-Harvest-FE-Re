@@ -16,7 +16,7 @@ const DiagnosisScreen = ({ route }) => {
 
   const getData = async () => {
     try {
-      const res = await axios.get(`http://localhost:9000/disease-info/${data}`);
+      const res = await axios.get(`https://b6ae-34-73-244-5.ngrok-free.app/disease-info/${data}`);
       console.log(res);
       setDia(res?.data);
     } catch (error) {
