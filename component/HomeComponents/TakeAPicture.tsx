@@ -31,7 +31,7 @@ const TakeAPicture = () => {
         >
           Healthify your crops
         </Text>
-        <FontAwesome6 name="clock-rotate-left" size={22} color={app_colors.primary} />
+        {/* <FontAwesome6 name="clock-rotate-left" size={22} color={app_colors.primary} /> */}
       </View>
 
       <Image

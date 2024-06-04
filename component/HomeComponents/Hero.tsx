@@ -6,12 +6,35 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthContext } from '../../context/AuthContext';
 import { kelvinToCelsius, kelvinToFahrenheit } from '../../utils/tempConverter';
 
-const Hero = ({ weather }: { weather: any }) => {
+const Hero = ({ weather, loading }: { weather: any; loading: boolean }) => {
   const { userName } = useContext(AuthContext);
   const name = userName;
   const temp = '32';
-  const day = 'Thu';
-  const time = '10:46';
+  const currentDate = new Date();
+
+  // Get the current day of the week as a string
+  const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const day = daysOfWeek[currentDate.getDay()];
+
+  // Get the current hours and minutes
+  let hours = currentDate.getHours();
+  const minutes = currentDate.getMinutes();
+
+  // Determine AM or PM suffix
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+
+  // Convert hours from 24-hour to 12-hour format
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+
+  // Format the minutes to always have two digits
+  const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+
+  // Combine the day and time into the desired format
+  const formattedDateTime = `${day}, ${hours}:${formattedMinutes} ${ampm}`;
+
+  // console.log(formattedDateTime);
+
   const { top, bottom } = useSafeAreaInsets();
 
   return (
@@ -31,15 +54,24 @@ const Hero = ({ weather }: { weather: any }) => {
               <Text style={styles.name}>{name}</Text>
             </View>
 
-            <Feather name="bell" size={24} color="white" />
+            {/* <Feather name="bell" size={24} color="white" /> */}
           </View>
           <View style={{ flexDirection: 'row', columnGap: 12 }}>
             <Text style={styles.temp}>
-              {parseInt(kelvinToFahrenheit(weather?.main?.temp?.toFixed(1)))}°F
+              {loading ? (
+                '-'
+              ) : (
+                <>{weather && parseInt(kelvinToFahrenheit(weather?.main?.temp?.toFixed(1)))}°F</>
+              )}
             </Text>
             <Text style={[styles?.temp, styles.text]}>
-              {day}, {time}
-              {'\n'}/ {parseInt(kelvinToCelsius(weather?.main?.temp?.toFixed(1)))}° C
+              {formattedDateTime}
+              {'\n'}/{' '}
+              {loading ? (
+                '-'
+              ) : (
+                <>{weather && parseInt(kelvinToCelsius(weather?.main?.temp?.toFixed(1)))}° C</>
+              )}
             </Text>
           </View>
           <Text style={[styles.temp, styles.text]}>{weather?.name}</Text>

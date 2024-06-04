@@ -36,13 +36,32 @@ const Vr = () => {
 };
 
 const Weather = ({ weather }: { weather: any }) => {
+  console.log(weather);
   return (
     <View style={styles.container}>
-      <WeatherInfo icon="sun" size={32} color="orange" label="UV Index" value="LOW" />
+      <WeatherInfo
+        icon="layers"
+        size={32}
+        color="orange"
+        label="Pressure"
+        value={weather ? weather?.main?.pressure + ' hpa' : '-'}
+      />
       <Vr />
-      <WeatherInfo icon="droplet" size={32} color="#5193DE" label="Humidity" value="83%" />
+      <WeatherInfo
+        icon="droplet"
+        size={32}
+        color="#5193DE"
+        label="Humidity"
+        value={weather ? weather?.main?.humidity + '%' : '-'}
+      />
       <Vr />
-      <WeatherInfo icon="wind" size={32} color="#7E83A9" label="Wind" value="10 km/h" />
+      <WeatherInfo
+        icon="wind"
+        size={32}
+        color="#7E83A9"
+        label="Wind"
+        value={weather ? weather?.wind?.speed + 'km/h' : '-'}
+      />
     </View>
   );
 };

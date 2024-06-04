@@ -3,6 +3,7 @@ import { Alert, Image, ScrollView, Text, View } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import app_colors from '../constants/app_colors';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import Data from '../assets/Data.json';
 import axios from 'axios';
 import LottieView from 'lottie-react-native';
 import Accordion from '../component/common/Accordian';
@@ -13,12 +14,29 @@ const DiagnosisScreen = ({ route }) => {
   console.log(image);
   const [dia, setDia] = useState({});
   console.log(data);
+  function findDiseaseByName(disease_name: string) {
+    for (let i = 0; i < Data.length; i++) {
+      if (Data[i].Name === disease_name) {
+        return Data[i];
+      }
+    }
+    return null; // Return null if no disease is found with the given name
+  }
 
   const getData = async () => {
     try {
-      const res = await axios.get(`https://b6ae-34-73-244-5.ngrok-free.app/disease-info/${data}`);
-      console.log(res);
-      setDia(res?.data);
+      // const res = await axios.get(`https://b6ae-34-73-244-5.ngrok-free.app/disease-info/${data}`);
+      //   function findDiseaseByName(data_final, disease_name) {
+      // for (let i = 0; i < data_final.length; i++) {
+      //     if (data_final[i].Name === disease_name) {
+      //         return data_final[i];
+      //     }
+      // }
+      //     return null; // Return null if no disease is found with the given name
+      // }
+
+      // console.log(res);
+      setDia(findDiseaseByName(data));
     } catch (error) {
       Alert.alert('Error', 'Something went wrong');
     }

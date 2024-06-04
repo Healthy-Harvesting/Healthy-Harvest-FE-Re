@@ -97,7 +97,7 @@ const CameraScreen = () => {
         });
         if (res.status == 200) {
           setTimeout(() => {
-            navigation.replace('Diagnosis', { image: photo?.uri, data: res?.data?.Name });
+            navigation.replace('Diagnosis', { image: photo?.uri, data: res?.data?.name });
             setLoading(false);
           }, 2000);
         }
@@ -136,8 +136,9 @@ const CameraScreen = () => {
         type: 'image/jpg',
         fileName: data._data.name || 'fallback.jpg',
       });
+      imageData.append('t', 'mobilenetV2');
 
-      const res = await axios.post('https://b6ae-34-73-244-5.ngrok-free.app/predict', imageData, {
+      const res = await axios.post('http://3.6.254.5/api/predict', imageData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -152,7 +153,7 @@ const CameraScreen = () => {
         //   },
         // });
         setTimeout(() => {
-          navigation.replace('Diagnosis', { image: photo?.path, data: res?.data?.Name });
+          navigation.replace('Diagnosis', { image: photo?.path, data: res?.data?.name });
           setLoading(false);
         }, 2000);
       }

@@ -35,7 +35,8 @@ const requestLocationPermission = async () => {
 
 const HomeScreen = () => {
   const [location, setLocation] = useState<any>(false);
-  const [weather, setWeather] = useState<any>();
+  const [weather, setWeather] = useState<any>(null);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     (() => {
@@ -63,6 +64,7 @@ const HomeScreen = () => {
   useEffect(() => {
     (async () => {
       try {
+        setLoading(true);
         console.log(location);
         const res = await axios.get(
           `https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&appid=98ce44eb72e5be41c287f4f92f048841`
@@ -71,6 +73,8 @@ const HomeScreen = () => {
         setWeather(res.data);
       } catch (err) {
         console.log(err.response.data);
+      } finally {
+        setLoading(false);
       }
     })();
   }, [location]);
@@ -80,7 +84,7 @@ const HomeScreen = () => {
   return (
     <View style={{ flex: 1, backgroundColor: '#fff' }}>
       <ScrollView contentContainerStyle={{ paddingBottom: 24, rowGap: 24 }}>
-        <Hero weather={weather} />
+        <Hero loading={loading} weather={weather} />
         <Weather weather={weather} />
         <TakeAPicture />
         <KnowledgeBaseSection />
