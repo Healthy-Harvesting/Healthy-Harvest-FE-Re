@@ -9,10 +9,10 @@ import LottieView from 'lottie-react-native';
 import Accordion from '../component/common/Accordian';
 import ImageGrid from '../component/common/ImageGrid';
 
-const DiagnosisScreen = ({ route }) => {
+const DiagnosisScreen = ({ route }: any) => {
   const { data, image, uri } = route?.params;
   console.log(image);
-  const [dia, setDia] = useState({});
+  const [dia, setDia] = useState<any>({});
   console.log(data);
   function findDiseaseByName(disease_name: string) {
     for (let i = 0; i < Data.length; i++) {
@@ -137,7 +137,7 @@ const DiagnosisScreen = ({ route }) => {
               title={'Medication'}
               content={
                 <>
-                  {dia?.Medications?.map((item, index) => {
+                  {dia?.Medications?.map((item: any, index: number) => {
                     return (
                       <Text key={index} style={{ color: '#000', fontSize: 16 }}>
                         - {item}
@@ -153,7 +153,7 @@ const DiagnosisScreen = ({ route }) => {
             title={'Maintainance'}
             content={
               <View style={{ rowGap: 12 }}>
-                {dia?.Maintaining?.map((item, index) => {
+                {dia?.Maintaining?.map((item: any, index: number) => {
                   return (
                     <View
                       style={{
