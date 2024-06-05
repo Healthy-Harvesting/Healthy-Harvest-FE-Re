@@ -71,7 +71,7 @@ const HomeScreen = () => {
         );
         console.log('Data', res.data);
         setWeather(res.data);
-      } catch (err) {
+      } catch (err: any) {
         console.log(err.response.data);
       } finally {
         setLoading(false);
